@@ -1,0 +1,27 @@
+//GET ALL USERS
+GET  http://127.0.0.1:5000/users HTTP/1.1
+
+//GET USER BY ID
+GET  http://127.0.0.1:5000/users/3 HTTP/1.1
+
+//CREATE USER
+POST  http://127.0.0.1:5000/add_user HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "username": "testwey",
+    "email": "hellwworld@gmail.com"
+}
+
+//UPDATE USER
+PUT  http://127.0.0.1:5000/users/3 HTTP/1.1
+content-type: application/json
+
+{
+    "username": "testw3y",
+    "email": "hellwworld@gmail.com"
+}
+
+//DELETE USER
+DELETE  http://127.0.0.1:5000/users/3 HTTP/1.1
